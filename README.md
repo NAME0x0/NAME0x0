@@ -133,4 +133,4 @@ Reach out if you're interested in collaborating on tech solutions, discussing AI
 
 [![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&redirect=true)
 
-![snake animation](https://github.com/<seu user name>/<seu user name>/blob/output/github-contribution-grid-snake2.svg)
+<img alt="GitHub Snake" src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/output/github-contribution-grid-snake.svg-dark" />
