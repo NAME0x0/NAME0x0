@@ -126,7 +126,7 @@
 ### 🤝 Let’s Connect!
 Reach out if you're interested in collaborating on tech solutions, discussing AI and development, or exploring new opportunities in tech innovation.
 
-📧 m.afsah.27@outlook.com  
+📧 m.afsah.279@gmail.com 
 💼 [LinkedIn](https://www.linkedin.com/in/muhammad-afsah-mumtaz/)  
 
 ---
