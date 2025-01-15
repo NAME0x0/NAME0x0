@@ -1,6 +1,6 @@
 ---
 
-# 👋 Hello, I'm Afsah
+# 👋 Hello, I'm Muhammad Afsah
 
 🎓 Pursuing a BSc (Hons) in IT at Middlesex University Dubai  
 🚀 Passionate about creating tech for convenience, financial freedom, and impacting the future. Aspiring to contribute to AI development and entrepreneurship.  
