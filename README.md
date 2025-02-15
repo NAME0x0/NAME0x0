@@ -1,6 +1,6 @@
 <!-- Animated ASCII Art Header -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/Animated-Hello-Banner.gif" alt="Animated Hello Banner" />
+  <img src="https://media3.giphy.com/media/aUovxH8Vf9qDu/giphy.gif" alt="Animated ASCII Art Header" />
 </p>
 
 <!-- Visitor Count Badge -->
