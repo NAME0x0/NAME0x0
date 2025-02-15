@@ -3,10 +3,11 @@
   <img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/Animated-Hello-Banner.gif" alt="Animated Hello Banner" />
 </p>
 
-<!-- Alternative Visitor Count Badge -->
+<!-- Visitor Count Badge -->
 <p align="center">
-  <img src="https://gpvc.arturio.dev/NAME0x0" alt="GitHub Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=brightgreen" alt="GitHub Profile Views" />
 </p>
+
 
 
 # 👋 Hello, I'm Afsah
