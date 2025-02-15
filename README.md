@@ -1,12 +1,13 @@
-<!-- Custom ASCII Art Header -->
+<!-- Animated ASCII Art Header -->
 <p align="center">
-  <img src="https://ascii-galaxy.vercel.app/api?width=800&height=150" alt="ASCII Galaxy Header" />
+  <img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/Animated-Hello-Banner.gif" alt="Animated Hello Banner" />
 </p>
 
 <!-- Visitor Count Badge -->
 <p align="center">
-  <img src="https://visitor-badge.glitch.me/badge?page_id=NAME0x0.NAME0x0" alt="Visitor Count Badge" />
+  <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=brightgreen" alt="GitHub Profile Views" />
 </p>
+
 
 # 👋 Hello, I'm Afsah
 
@@ -101,6 +102,7 @@ Discover more of my interests by checking out my [Starred Projects](https://gith
 ## 🧘 Daily Philosophy
 
 Cultivate your mind daily with a dose of stoic wisdom:
+
 [![Daily Stoic Quote](https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark)](https://github.com/cheehwatang/github-readme-daily-quotes)
 
 ---
