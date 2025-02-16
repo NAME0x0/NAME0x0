@@ -134,7 +134,7 @@ Stay up-to-date with my coding journey:
 ---
 
 <div align="center">
-[![Spotify Profile](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&redirect=true)
+  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true" alt="Spotify Profile" />
 </div>
 
 <p align="center">
