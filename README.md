@@ -104,7 +104,7 @@ Cultivate your mind daily with a dose of stoic wisdom:
 ## 🎮 Game Zone
 
 Need a break from coding? Enjoy a classic game right here!  
-[![Play Snake](https://img.shields.io/badge/Play-Snake-brightgreen?style=for-the-badge&logo=snake)](https://example.com/play-snake)  
+[![Play Snake](https://img.shields.io/badge/Play-Snake-brightgreen?style=for-the-badge&logo=snake)](https://playsnake.org)  
 *Click the badge above to play a fun, retro-inspired Snake game.*
 
 ---
