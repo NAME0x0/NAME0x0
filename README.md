@@ -1,4 +1,8 @@
-<div class="tenor-gif-embed" data-postid="20916901" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/julian-ainsworth-fate-kaleid-prillya-prisma-illya-fate-julian-gif-20916901">Julian Ainsworth Fate Kaleid GIF</a>from <a href="https://tenor.com/search/julian+ainsworth-gifs">Julian Ainsworth GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<!-- Animated Header GIF -->
+<p align="center">
+  <img src="https://media1.tenor.com/m/SmFyi15byc8AAAAC/julian-ainsworth-fate-kaleid.gif" alt="Julian Ainsworth Fate Kaleid GIF" style="max-width:100%;" />
+</p>
+
 
 <!-- Visitor Count Badge -->
 <p align="center">
