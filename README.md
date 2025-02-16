@@ -1,6 +1,6 @@
 <!-- Animated Header GIF -->
 <p align="center">
-  <img src="https://media1.tenor.com/m/SmFyi15byc8AAAAC/julian-ainsworth-fate-kaleid.gif" alt="Julian Ainsworth Fate Kaleid GIF" style="max-width:100%;" />
+  <img src="https://media1.tenor.com/m/CwTQQNdmV-4AAAAd/vagabond-musashi.gif" alt="Miyamoto Musashi GIF" style="max-width:100%;" />
 </p>
 
 # 👋 Hello, I'm Afsah
