@@ -3,14 +3,6 @@
   <img src="https://media1.tenor.com/m/SmFyi15byc8AAAAC/julian-ainsworth-fate-kaleid.gif" alt="Julian Ainsworth Fate Kaleid GIF" style="max-width:100%;" />
 </p>
 
-
-<!-- Visitor Count Badge -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=brightgreen" alt="GitHub Profile Views" />
-</p>
-
-
-
 # 👋 Hello, I'm Afsah
 
 > *"Innovation is the key to unlocking the future."*
@@ -120,8 +112,13 @@ Need a break from coding? Enjoy a classic game right here!
 ## 📈 GitHub Stats & Analytics
 
 Stay up-to-date with my coding journey:
-- [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NAME0x0&show_icons=true&theme=radical)](https://github.com/NAME0x0)
-- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NAME0x0&layout=compact&theme=radical)](https://github.com/NAME0x0)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NAME0x0&show_icons=true&theme=radical)](https://github.com/NAME0x0)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NAME0x0&layout=compact&theme=radical)](https://github.com/NAME0x0)
+
+<!-- Visitor Count Badge -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=brightgreen" alt="GitHub Profile Views" />
+</p>
 
 ---
 
