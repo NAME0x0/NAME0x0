@@ -119,7 +119,7 @@ Stay up-to-date with my coding journey:
 
 | GitHub Streak | Profile Trophy |
 |:-------------:|:--------------:|
-| [![GitHub Streak](https://github-readme-streak-stats-six-gray.vercel.app?user=NAME0x0&theme=radical&date_format=M%20j%5B%2C%20Y%5D&exclude_days=Sun%2CSat&hide_current_streak=true)](https://git.io/streak-stats) | [![Trophy](https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical)](https://github.com/ryo-ma/github-profile-trophy) |
+| [![GitHub Streak](https://github-readme-streak-stats-six-gray.vercel.app?user=NAME0x0&theme=radical&date_format=M%20j%5B%2C%20Y%5D&hide_current_streak=true)](https://git.io/streak-stats) | [![Trophy](https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical)](https://github.com/ryo-ma/github-profile-trophy) |
 
   [![Followers](https://img.shields.io/github/followers/NAME0x0?style=social)](https://github.com/NAME0x0)
   <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=brightgreen" alt="GitHub Profile Views" />
