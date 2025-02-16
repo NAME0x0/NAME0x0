@@ -113,8 +113,17 @@ Need a break from coding? Enjoy a classic game right here!
 
 Stay up-to-date with my coding journey:
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NAME0x0&show_icons=true&theme=radical)](https://github.com/NAME0x0)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NAME0x0&layout=compact&theme=radical)](https://github.com/NAME0x0)
+| GitHub Stats | Top Languages |
+|:------------:|:-------------:|
+| [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NAME0x0&show_icons=true&theme=radical)](https://github.com/NAME0x0) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NAME0x0&layout=compact&theme=radical)](https://github.com/NAME0x0) |
+
+| GitHub Streak | Profile Trophy |
+|:-------------:|:--------------:|
+| [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=NAME0x0&theme=radical)](https://git.io/streak-stats) | [![Trophy](https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical)](https://github.com/ryo-ma/github-profile-trophy) |
+
+<p align="center">
+  [![Followers](https://img.shields.io/github/followers/NAME0x0?style=social)](https://github.com/NAME0x0)
+</p>
 
 <!-- Visitor Count Badge -->
 <p align="center">
