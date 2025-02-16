@@ -112,6 +112,7 @@ Need a break from coding? Enjoy a classic game right here!
 ## 📈 GitHub Stats & Analytics
 
 Stay up-to-date with my coding journey:
+
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NAME0x0&show_icons=true&theme=radical)](https://github.com/NAME0x0)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NAME0x0&layout=compact&theme=radical)](https://github.com/NAME0x0)
 
