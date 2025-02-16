@@ -122,11 +122,7 @@ Stay up-to-date with my coding journey:
 | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=NAME0x0&theme=radical)](https://git.io/streak-stats) | [![Trophy](https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical)](https://github.com/ryo-ma/github-profile-trophy) |
 
   [![Followers](https://img.shields.io/github/followers/NAME0x0?style=social)](https://github.com/NAME0x0)
-
-<!-- Visitor Count Badge -->
-<p align="center">
   <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=brightgreen" alt="GitHub Profile Views" />
-</p>
 
 ---
 
