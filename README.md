@@ -119,11 +119,9 @@ Stay up-to-date with my coding journey:
 
 | GitHub Streak | Profile Trophy |
 |:-------------:|:--------------:|
-| [![GitHub Streak](https://github-readme-streak-stats.onrender.com?user=NAME0x0&theme=radical)](https://git.io/streak-stats) | [![Trophy](https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical)](https://github.com/ryo-ma/github-profile-trophy) |
+| [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=NAME0x0&theme=radical)](https://git.io/streak-stats) | [![Trophy](https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical)](https://github.com/ryo-ma/github-profile-trophy) |
 
-<p align="center">
-  [![Followers](https://img.shields.io/github/followers/NAME0x0?label=Followers&style=social)](https://github.com/NAME0x0)
-</p>
+  [![Followers](https://img.shields.io/github/followers/NAME0x0?style=social)](https://github.com/NAME0x0)
 
 <!-- Visitor Count Badge -->
 <p align="center">
@@ -139,9 +137,7 @@ Stay up-to-date with my coding journey:
 
 ---
 
-<p align="center">
-  [![Spotify Profile](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&redirect=true)
-</p>
+[![Spotify Profile](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true)](https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&redirect=true)
 
 <p align="center">
   <img alt="GitHub Snake" src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/output/github-contribution-grid-snake-dark.svg" />
