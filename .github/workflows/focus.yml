@@ -1,0 +1,52 @@
+name: Update Current Focus
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-focus:
+    runs-on: ubuntu-latest
+    name: Pull current focus from Gist
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch focus gist and update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Fetch the gist named "current-focus"
+          GIST_CONTENT=$(gh gist list --limit 50 | grep "current-focus" | head -1 | awk '{print $1}')
+
+          if [ -z "$GIST_CONTENT" ]; then
+            FOCUS_TEXT="> No active focus set. Create a gist named \`current-focus\` to update this section."
+          else
+            FOCUS_TEXT=$(gh gist view "$GIST_CONTENT" --raw)
+          fi
+
+          # Replace content between focus markers
+          python3 - <<'PYEOF'
+          import re, os
+
+          focus = os.environ.get("FOCUS_TEXT", "No focus set.")
+
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          pattern = r"(<!--START_SECTION:focus-->).*?(<!--END_SECTION:focus-->)"
+          replacement = f"\\1\n{focus}\n\\2"
+          content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+          with open("README.md", "w") as f:
+              f.write(content)
+          PYEOF
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet --staged || git commit -m "chore: update current focus section"
+          git push
