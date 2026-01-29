@@ -1,0 +1,56 @@
+name: Refresh Daily Quote
+
+on:
+  schedule:
+    - cron: "0 */1 * * *"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    name: Bust quote cache with new timestamp
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update quote timestamp
+        run: |
+          TIMESTAMP=$(date +%s)
+          python3 - <<PYEOF
+          import re
+
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          pattern = r"(<!--START_SECTION:quote-->).*?(<!--END_SECTION:quote-->)"
+          replacement = r'''<!--START_SECTION:quote-->
+          <p align="center">
+            <a href="https://github.com/cheehwatang/github-readme-daily-quotes"><img src="https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark&timestamp=${TIMESTAMP}" alt="Daily Stoic Quote" /></a>
+          </p>
+          <!--END_SECTION:quote-->'''
+
+          # Can't use shell var in python heredoc, so read it
+          import os
+          ts = os.environ.get("TIMESTAMP", "${TIMESTAMP}")
+
+          new_block = f"""<!--START_SECTION:quote-->
+          <p align="center">
+            <a href="https://github.com/cheehwatang/github-readme-daily-quotes"><img src="https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark&timestamp={ts}" alt="Daily Stoic Quote" /></a>
+          </p>
+          <!--END_SECTION:quote-->"""
+
+          content = re.sub(pattern, new_block, content, flags=re.DOTALL)
+
+          with open("README.md", "w") as f:
+              f.write(content)
+          PYEOF
+        env:
+          TIMESTAMP: ${{ github.run_id }}
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet --staged || git commit -m "chore: refresh stoic quote"
+          git push

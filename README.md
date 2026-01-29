@@ -150,9 +150,11 @@ graph TD
 
 ---
 
+<!--START_SECTION:quote-->
 <p align="center">
-  <a href="https://github.com/cheehwatang/github-readme-daily-quotes"><img src="https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark" alt="Daily Stoic Quote" /></a>
+  <a href="https://github.com/cheehwatang/github-readme-daily-quotes"><img src="https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark&timestamp=0" alt="Daily Stoic Quote" /></a>
 </p>
+<!--END_SECTION:quote-->
 
 <div align="center">
   <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=x9f8qlmq4t8rnbe5aqgjka9fb&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true&bar_color=53b14f&bar_color_cover=true" alt="Spotify Profile" />
