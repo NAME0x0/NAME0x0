@@ -49,4 +49,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add README.md
           git diff --quiet --staged || git commit -m "chore: update current focus section"
+          git pull --rebase
           git push
