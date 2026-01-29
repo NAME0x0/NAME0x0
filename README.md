@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://github.com/NAME0x0?tab=followers"><img src="https://img.shields.io/github/followers/NAME0x0?style=flat&color=181717&labelColor=181717&logo=github" alt="Followers" /></a>
-  <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=181717&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=NAME0x0&color=181717&style=flat&label=visitors" alt="Profile Visitors" />
 </p>
 
 ---
