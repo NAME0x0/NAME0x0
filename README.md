@@ -98,6 +98,8 @@ graph TD
 ## Recent Activity
 
 <!--START_SECTION:activity-->
+1. ❌ Closed PR [#4](https://github.com/NAME0x0/Tangled/pull/4) in [NAME0x0/Tangled](https://github.com/NAME0x0/Tangled)
+2. ❌ Closed PR [#5](https://github.com/NAME0x0/Tangled/pull/5) in [NAME0x0/Tangled](https://github.com/NAME0x0/Tangled)
 <!--END_SECTION:activity-->
 
 ---
