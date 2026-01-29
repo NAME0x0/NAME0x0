@@ -91,6 +91,7 @@ graph TD
 ## Current Focus
 
 <!--START_SECTION:focus-->
+No focus set.
 <!--END_SECTION:focus-->
 
 ---
