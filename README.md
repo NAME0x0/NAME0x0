@@ -99,8 +99,8 @@ No focus set.
 ## Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#4](https://github.com/NAME0x0/Tangled/pull/4) in [NAME0x0/Tangled](https://github.com/NAME0x0/Tangled)
-2. ❌ Closed PR [#5](https://github.com/NAME0x0/Tangled/pull/5) in [NAME0x0/Tangled](https://github.com/NAME0x0/Tangled)
+1. ❌ Closed PR [#2](https://github.com/NAME0x0/MALD/pull/2) in [NAME0x0/MALD](https://github.com/NAME0x0/MALD)
+2. ❌ Closed PR [#4](https://github.com/NAME0x0/Tangled/pull/4) in [NAME0x0/Tangled](https://github.com/NAME0x0/Tangled)
 <!--END_SECTION:activity-->
 
 ---
