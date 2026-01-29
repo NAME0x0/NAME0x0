@@ -105,17 +105,17 @@ graph TD
 ## Coding Profile
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/main/profile-summary-card-output/radical/0-profile-details.svg" alt="Profile Details" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NAME0x0&theme=radical" alt="Profile Details" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/main/profile-summary-card-output/radical/1-repos-per-language.svg" alt="Repos per Language" />
-  <img src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/main/profile-summary-card-output/radical/2-most-commit-language.svg" alt="Most Commit Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NAME0x0&theme=radical" alt="Repos per Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=NAME0x0&theme=radical" alt="Most Commit Language" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/main/profile-summary-card-output/radical/3-stats.svg" alt="Stats" />
-  <img src="https://raw.githubusercontent.com/NAME0x0/NAME0x0/main/profile-summary-card-output/radical/4-productive-time.svg" alt="Productive Time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NAME0x0&theme=radical" alt="Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=NAME0x0&theme=radical&utcOffset=4" alt="Productive Time" />
 </p>
 
 ---
@@ -131,17 +131,15 @@ graph TD
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=NAME0x0&theme=radical&no-frame=true&column=6" alt="Trophy" />
+  <img src="https://github-trophies.vercel.app/?username=NAME0x0&theme=radical&no-frame=true&no-bg=true&column=6&margin-w=15" alt="Trophy" />
 </p>
 
 ---
 
-## GitHub Skyline
+## Contribution Graph
 
 <p align="center">
-  <a href="https://skyline.github.com/NAME0x0/2025">
-    <img src="https://img.shields.io/badge/View%203D%20Contribution%20Skyline-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Skyline" />
-  </a>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NAME0x0&theme=redical&hide_border=true&area=true" alt="Contribution Graph" />
 </p>
 
 ---
