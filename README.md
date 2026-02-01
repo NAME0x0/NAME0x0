@@ -99,8 +99,8 @@ No focus set.
 ## Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#2](https://github.com/NAME0x0/MALD/pull/2) in [NAME0x0/MALD](https://github.com/NAME0x0/MALD)
-2. ❌ Closed PR [#4](https://github.com/NAME0x0/Tangled/pull/4) in [NAME0x0/Tangled](https://github.com/NAME0x0/Tangled)
+1. 🚀 Published release [v0.1.0 — Terminal-First PKM with TUI Editor, Smart Routing, Local AI](https://github.com/NAME0x0/MALD/releases/tag/v0.1.0) in [NAME0x0/MALD](https://github.com/NAME0x0/MALD)
+2. ❌ Closed PR [#2](https://github.com/NAME0x0/MALD/pull/2) in [NAME0x0/MALD](https://github.com/NAME0x0/MALD)
 <!--END_SECTION:activity-->
 
 ---
