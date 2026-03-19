@@ -99,8 +99,8 @@ No focus set.
 ## Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#1](https://github.com/judhi/madel_score/issues/1) in [judhi/madel_score](https://github.com/judhi/madel_score)
-2. ❌ Closed PR [#2](https://github.com/NAME0x0/MALD/pull/2) in [NAME0x0/MALD](https://github.com/NAME0x0/MALD)
+1. 💪 Opened PR [#519](https://github.com/unchihugo/FluentFlyout/pull/519) in [unchihugo/FluentFlyout](https://github.com/unchihugo/FluentFlyout)
+2. ❗ Opened issue [#1](https://github.com/judhi/madel_score/issues/1) in [judhi/madel_score](https://github.com/judhi/madel_score)
 <!--END_SECTION:activity-->
 
 ---
