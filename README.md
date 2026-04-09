@@ -99,8 +99,8 @@ No focus set.
 ## Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#520](https://github.com/unchihugo/FluentFlyout/pull/520#issuecomment-4106721583) in [unchihugo/FluentFlyout](https://github.com/unchihugo/FluentFlyout)
-2. 🗣 Commented on [#520](https://github.com/unchihugo/FluentFlyout/pull/520#issuecomment-4106676278) in [unchihugo/FluentFlyout](https://github.com/unchihugo/FluentFlyout)
+1. 🔓 Reopened issue [#3](https://github.com/NAME0x0/CST2310_OpenAI_Enterprise_Billing/issues/3) in [NAME0x0/CST2310_OpenAI_Enterprise_Billing](https://github.com/NAME0x0/CST2310_OpenAI_Enterprise_Billing)
+2. ℹ️ Assigned issue [#6](https://github.com/NAME0x0/CST2310_OpenAI_Enterprise_Billing/issues/6) in [NAME0x0/CST2310_OpenAI_Enterprise_Billing](https://github.com/NAME0x0/CST2310_OpenAI_Enterprise_Billing)
 <!--END_SECTION:activity-->
 
 ---
