@@ -99,8 +99,8 @@ No focus set.
 ## Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#1](https://github.com/NAME0x0/CST2656_Smart_Home/issues/1) in [NAME0x0/CST2656_Smart_Home](https://github.com/NAME0x0/CST2656_Smart_Home)
-2. ℹ️ Assigned issue [#1](https://github.com/NAME0x0/CST2656_Smart_Home/issues/1) in [NAME0x0/CST2656_Smart_Home](https://github.com/NAME0x0/CST2656_Smart_Home)
+1. 🗣 Commented on [#1](https://github.com/NAME0x0/CST2656_Smart_Home/issues/1#issuecomment-4245367714) in [NAME0x0/CST2656_Smart_Home](https://github.com/NAME0x0/CST2656_Smart_Home)
+2. ❗ Opened issue [#1](https://github.com/NAME0x0/CST2656_Smart_Home/issues/1) in [NAME0x0/CST2656_Smart_Home](https://github.com/NAME0x0/CST2656_Smart_Home)
 <!--END_SECTION:activity-->
 
 ---
