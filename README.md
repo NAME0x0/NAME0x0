@@ -20,34 +20,35 @@
 
 ---
 
-Building sovereign computing environments — from custom OS init systems to native shell replacements to local-first AI assistants. Pursuing BSc (Hons) IT at Middlesex University Dubai.
+Building local-first systems across knowledge workspaces, shell environments, AI research, and real-time visual tooling. Pursuing BSc (Hons) IT at Middlesex University Dubai.
 
 ---
 
 ## The Sovereign Stack
 
 ```mermaid
-graph TD
-    A["MALD — OS Foundation<br/><i>Arch · s6 · LUKS</i>"] --> B["Terminus — Native Shell<br/><i>C++ · CMake · Lua</i>"]
-    A --> C["MAVIS — Shell Replacement<br/><i>Rust · RenderScript</i>"]
-    B --> D["AVA — AI Cognition<br/><i>Python · TypeScript · Rust</i>"]
-    C --> D
-    D --> E["Tangled — Visualization<br/><i>JavaScript · GLSL · WebGL</i>"]
+flowchart LR
+    A["Project Portfolio"] --> B["MALD — Markdown Workspace<br/><i>Rust · GUI/TUI/CLI · Optional local AI</i>"]
+    A --> C["Terminus — Terminal Desktop<br/><i>C++ · wxWidgets · Lua</i>"]
+    A --> D["MAVIS — Windows Shell Environment<br/><i>Rust · Dear ImGui · Lua</i>"]
+    A --> E["AVA — Local AI Lab<br/><i>Python · PyTorch · Transformers</i>"]
+    A --> F["Tangled — Real-Time 3D Web App<br/><i>JavaScript · Three.js · Socket.IO</i>"]
 
-    style A fill:#0d1117,stroke:#58a6ff,color:#c9d1d9
+    style A fill:#161b22,stroke:#8b949e,color:#c9d1d9
     style B fill:#0d1117,stroke:#58a6ff,color:#c9d1d9
     style C fill:#0d1117,stroke:#58a6ff,color:#c9d1d9
-    style D fill:#0d1117,stroke:#f78166,color:#c9d1d9
-    style E fill:#0d1117,stroke:#3fb950,color:#c9d1d9
+    style D fill:#0d1117,stroke:#58a6ff,color:#c9d1d9
+    style E fill:#0d1117,stroke:#f78166,color:#c9d1d9
+    style F fill:#0d1117,stroke:#3fb950,color:#c9d1d9
 ```
 
 | Layer | Project | Core Tech | What It Does |
 |:------|:--------|:----------|:-------------|
-| **Foundation** | [MALD](https://github.com/NAME0x0/MALD) | Arch, s6, LUKS | Custom Linux distribution with encrypted sovereign boot |
-| **Interface** | [Terminus](https://github.com/NAME0x0/Terminus) | C++, CMake | Desktop-replacing terminal environment for Windows |
-| **Interface** | [MAVIS](https://github.com/NAME0x0/MAVIS) | Rust | Full Windows shell replacement |
-| **Intelligence** | [AVA](https://github.com/NAME0x0/AVA) | Python, TypeScript, Rust | Local-first AI assistant with RAG and LLM orchestration |
-| **Visualization** | [Tangled](https://github.com/NAME0x0/Tangled) | JavaScript, GLSL | Quantum-entangled multi-window 3D browser experiences |
+| **Knowledge** | [MALD](https://github.com/NAME0x0/MALD) | Rust, GUI/TUI/CLI | Local-first markdown workspace with graph navigation, task extraction, and optional local AI |
+| **Interface** | [Terminus](https://github.com/NAME0x0/Terminus) | C++, wxWidgets, Lua | Windows terminal environment designed to replace the desktop with widgets, search, and integrated file workflows |
+| **Interface** | [MAVIS](https://github.com/NAME0x0/MAVIS) | Rust, Dear ImGui, Lua | Rust-based Windows shell environment focused on a scriptable terminal, IDE, widgets, and shell replacement |
+| **AI Research** | [AVA](https://github.com/NAME0x0/AVA) | Python, PyTorch, Transformers | Local AI research stack for training, distilling, evaluating, and serving models on constrained consumer hardware |
+| **Visualization** | [Tangled](https://github.com/NAME0x0/Tangled) | JavaScript, Three.js, Socket.IO | Real-time 3D web application for interactive browser-based visual experiences |
 
 ---
 
@@ -55,11 +56,11 @@ graph TD
 
 | Domain | Skills |
 |:-------|:-------|
-| **Systems Programming** | Kernel-level encryption, custom init orchestration (s6), manual memory management (C/C++), Rust ownership patterns |
-| **AI / ML Engineering** | Local RAG pipelines, LLM orchestration, PyTorch/TensorFlow model training, CUDA/ROCm acceleration |
-| **Shell & OS Design** | Windows shell replacement, terminal UI architecture, Lua scripting integration, LUKS full-disk encryption |
-| **Web & Visual** | GLSL shader programming, WebGL multi-window rendering, full-stack TypeScript, responsive CSS systems |
-| **DevOps & Tooling** | Docker/Kubernetes, CMake build systems, CI/CD pipelines, cross-platform batch/shell/PowerShell automation |
+| **Native Systems & UI** | Rust and C++ application architecture, Windows shell design, terminal-first UX, Dear ImGui/wxWidgets integration |
+| **AI / ML Engineering** | Local model training and evaluation, QLoRA fine-tuning, retrieval pipelines, quantized inference on constrained hardware |
+| **Knowledge & Local-First Tooling** | Markdown workspace design, graph navigation, task extraction, GUI/TUI/CLI product surfaces |
+| **Web & Real-Time Visuals** | Three.js scenes, Socket.IO synchronization, interactive browser experiences, shader-driven visual systems |
+| **Tooling & Delivery** | CMake and Cargo workflows, CI/CD automation, cross-platform scripting, local-first developer tooling |
 
 ---
 
@@ -91,7 +92,7 @@ graph TD
 ## Current Focus
 
 <!--START_SECTION:focus-->
-No focus set.
+Just surviving
 <!--END_SECTION:focus-->
 
 ---
@@ -155,7 +156,7 @@ No focus set.
 
 <!--START_SECTION:quote-->
 <p align="center">
-  <a href="https://github.com/cheehwatang/github-readme-daily-quotes"><img src="https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark&timestamp=1776752831" alt="Daily Stoic Quote" /></a>
+  <a href="https://github.com/cheehwatang/github-readme-daily-quotes"><img src="https://readme-daily-quotes.vercel.app/api?category=stoicism&theme=dark&timestamp=2026-04-21" alt="Daily Stoic Quote" /></a>
 </p>
 <!--END_SECTION:quote-->
 

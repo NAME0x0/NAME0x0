@@ -5,32 +5,23 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-focus:
     runs-on: ubuntu-latest
-    name: Pull current focus from Gist
+    name: Sync current focus
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch focus gist and update README
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update README focus block
         run: |
-          # Fetch the gist named "current-focus"
-          GIST_CONTENT=$(gh gist list --limit 50 | grep "current-focus" | head -1 | awk '{print $1}')
-
-          if [ -z "$GIST_CONTENT" ]; then
-            FOCUS_TEXT="> No active focus set. Create a gist named \`current-focus\` to update this section."
-          else
-            FOCUS_TEXT=$(gh gist view "$GIST_CONTENT" --raw)
-          fi
-
-          # Replace content between focus markers
           python3 - <<'PYEOF'
-          import re, os
+          import re
 
-          focus = os.environ.get("FOCUS_TEXT", "No focus set.")
+          focus = "Just surviving"
 
           with open("README.md", "r") as f:
               content = f.read()
