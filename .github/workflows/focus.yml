@@ -21,7 +21,7 @@ jobs:
           python3 - <<'PYEOF'
           import re
 
-          focus = "Just surviving"
+          focus = "Making 2B models punch above their weight · keeping 11 agents arguing productively about markets"
 
           with open("README.md", "r") as f:
               content = f.read()
