@@ -130,6 +130,10 @@ Making 2B models punch above their weight · keeping 11 agents arguing productiv
   <a href="mailto:m.afsah.279@gmail.com">m.afsah.279@gmail.com</a> · <a href="https://www.linkedin.com/in/muhammad-afsah-mumtaz/">LinkedIn</a> · <a href="https://NAME0x0.github.io">Portfolio</a> · <a href="https://pantheon-trades.vercel.app">Pantheon Live</a>
 </p>
 
+<p align="center">
+  <a href="https://ko-fi.com/B0S321V2UG"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" /></a>
+</p>
+
 ---
 
 <!--START_SECTION:quote-->
