@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="From scratch manifesto: things I will build myself — a car, a language, a programming language, a computer, a mobile phone, clothes. All stamped not yet. Excuses: never.">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .stamp { opacity: 0; animation: stampIn 0.4s ease-out forwards; }
+    .s1 { animation-delay: 0.3s; } .s2 { animation-delay: 0.7s; }
+    .s3 { animation-delay: 1.1s; } .s4 { animation-delay: 1.5s; }
+    .s5 { animation-delay: 1.9s; } .s6 { animation-delay: 2.3s; }
+    .s7 { animation-delay: 2.9s; }
+    @keyframes stampIn {
+      0% { opacity: 0; transform: scale(2.2); }
+      70% { opacity: 1; transform: scale(0.92); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .stamp { transform-box: fill-box; transform-origin: center; }
+  </style>
+  <rect x="1" y="1" width="1198" height="358" fill="#F4F1EA" stroke="#0A0A0A" stroke-width="2"/>
+
+  <text x="28" y="46" font-size="30" font-weight="900" letter-spacing="6" fill="#0A0A0A">&#8220;FROM SCRATCH&#8221;</text>
+  <text x="1172" y="42" text-anchor="end" font-size="11" font-weight="600" letter-spacing="2" fill="#0A0A0A" opacity="0.6">THINGS I WILL BUILD MYSELF. ALL OF THEM.</text>
+  <rect x="28" y="62" width="1144" height="2" fill="#0A0A0A"/>
+
+  <g font-size="17" font-weight="800" letter-spacing="4" fill="#0A0A0A">
+    <text x="28" y="104">A CAR</text>
+    <text x="28" y="140">A LANGUAGE</text>
+    <text x="28" y="176">A PROGRAMMING LANGUAGE</text>
+    <text x="28" y="212">A COMPUTER</text>
+    <text x="28" y="248">A MOBILE PHONE</text>
+    <text x="28" y="284">CLOTHES</text>
+  </g>
+  <g font-size="17" font-weight="400" fill="#0A0A0A" opacity="0.35">
+    <text x="120"  y="104">........................................................................</text>
+    <text x="205" y="140">..................................................................</text>
+    <text x="420" y="176">..............................................</text>
+    <text x="215" y="212">..................................................................</text>
+    <text x="285" y="248">...........................................................</text>
+    <text x="165" y="284">.....................................................................</text>
+  </g>
+
+  <g font-size="16" font-weight="900" letter-spacing="3">
+    <g class="stamp s1"><rect x="1010" y="86"  width="120" height="26" fill="none" stroke="#FF6B00" stroke-width="2.5" transform="rotate(-5 1070 99)"/><text x="1070" y="105" text-anchor="middle" fill="#FF6B00" transform="rotate(-5 1070 99)">NOT YET</text></g>
+    <g class="stamp s2"><rect x="1010" y="122" width="120" height="26" fill="none" stroke="#FF6B00" stroke-width="2.5" transform="rotate(4 1070 135)"/><text x="1070" y="141" text-anchor="middle" fill="#FF6B00" transform="rotate(4 1070 135)">NOT YET</text></g>
+    <g class="stamp s3"><rect x="1010" y="158" width="120" height="26" fill="none" stroke="#FF6B00" stroke-width="2.5" transform="rotate(-3 1070 171)"/><text x="1070" y="177" text-anchor="middle" fill="#FF6B00" transform="rotate(-3 1070 171)">NOT YET</text></g>
+    <g class="stamp s4"><rect x="1010" y="194" width="120" height="26" fill="none" stroke="#FF6B00" stroke-width="2.5" transform="rotate(6 1070 207)"/><text x="1070" y="213" text-anchor="middle" fill="#FF6B00" transform="rotate(6 1070 207)">NOT YET</text></g>
+    <g class="stamp s5"><rect x="1010" y="230" width="120" height="26" fill="none" stroke="#FF6B00" stroke-width="2.5" transform="rotate(-6 1070 243)"/><text x="1070" y="249" text-anchor="middle" fill="#FF6B00" transform="rotate(-6 1070 243)">NOT YET</text></g>
+    <g class="stamp s6"><rect x="1010" y="266" width="120" height="26" fill="none" stroke="#FF6B00" stroke-width="2.5" transform="rotate(3 1070 279)"/><text x="1070" y="285" text-anchor="middle" fill="#FF6B00" transform="rotate(3 1070 279)">NOT YET</text></g>
+  </g>
+
+  <rect x="28" y="306" width="1144" height="1" fill="#0A0A0A" opacity="0.3"/>
+  <text x="28" y="336" font-size="17" font-weight="800" letter-spacing="4" fill="#0A0A0A">EXCUSES</text>
+  <text x="150" y="336" font-size="17" font-weight="400" fill="#0A0A0A" opacity="0.35">.....................................................................</text>
+  <g class="stamp s7" font-size="16" font-weight="900" letter-spacing="3">
+    <rect x="1010" y="318" width="120" height="26" fill="#0A0A0A" transform="rotate(-4 1070 331)"/>
+    <text x="1070" y="337" text-anchor="middle" fill="#F4F1EA" transform="rotate(-4 1070 331)">NEVER</text>
+  </g>
+</svg>
