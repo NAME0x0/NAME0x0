@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="AVA: fine-tuned a 2-billion-parameter LLM to 82 percent ARC-Challenge and 92 percent ARC-Easy, beating Llama 3.2 3B Instruct, with a 42 megabyte adapter on a single 4 gigabyte GPU.">
+  <style> text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; } </style>
+  <rect x="1" y="1" width="1198" height="148" fill="#F4F1EA" stroke="#0A0A0A" stroke-width="2"/>
+  <rect x="0" y="0" width="6" height="150" fill="#0A0A0A"/>
+
+  <text x="34" y="58" font-size="34" font-weight="900" letter-spacing="3" fill="#0A0A0A">&#8220;AVA&#8221;</text>
+  <text x="34" y="86" font-size="13" font-weight="700" letter-spacing="4" fill="#FF6B00">2B PARAMS, 3B PROBLEMS</text>
+  <text x="34" y="124" font-size="11" font-weight="600" letter-spacing="2" fill="#0A0A0A" opacity="0.65">PYTHON &#183; PYTORCH &#183; PEFT / QLORA &#183; GGUF &#183; c/o github.com/NAME0x0/AVA</text>
+
+  <g text-anchor="end" font-weight="800" fill="#0A0A0A">
+    <text x="1166" y="42" font-size="15" letter-spacing="1">82.0% ARC-CHALLENGE / 92.0% ARC-EASY</text>
+    <text x="1166" y="68" font-size="15" letter-spacing="1">BEATS LLAMA 3.2 3B-INSTRUCT (78.6%)</text>
+    <text x="1166" y="94" font-size="15" letter-spacing="1">42 MB ADAPTER &#183; SINGLE 4 GB GPU</text>
+    <text x="1166" y="122" font-size="11" opacity="0.5" letter-spacing="2">17 BENCHMARKS &#183; 16,872-TASK EVAL HARNESS</text>
+  </g>
+</svg>

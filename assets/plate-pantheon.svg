@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="Pantheon-Trades: eleven AI agents deliberate every prediction-market trade. Brier score 0.149 on a 200-market backtest. 714 Python and 65 Solidity tests. Live.">
+  <style> text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; } </style>
+  <rect width="1200" height="150" fill="#0A0A0A"/>
+  <rect x="0" y="0" width="6" height="150" fill="#FF6B00"/>
+
+  <text x="34" y="58" font-size="34" font-weight="900" letter-spacing="3" fill="#F4F1EA">&#8220;PANTHEON-TRADES&#8221;</text>
+  <text x="34" y="86" font-size="13" font-weight="700" letter-spacing="4" fill="#FF6B00">11 AGENTS, ZERO CONSENSUS &#8212; BY DESIGN</text>
+  <text x="34" y="124" font-size="11" font-weight="600" letter-spacing="2" fill="#F4F1EA" opacity="0.65">PYTHON &#183; FASTAPI &#183; SOLIDITY &#183; NEXT.JS &#183; c/o github.com/NAME0x0/Pantheon-Trades</text>
+
+  <g text-anchor="end" font-weight="800">
+    <text x="1166" y="42" font-size="15" fill="#F4F1EA" letter-spacing="1">BRIER 0.149 / 200-MARKET BACKTEST</text>
+    <text x="1166" y="68" font-size="15" fill="#F4F1EA" letter-spacing="1">714 PY + 65 SOL TESTS</text>
+    <text x="1166" y="94" font-size="15" fill="#FF6B00" letter-spacing="1">&#9679; LIVE &#8212; pantheon-trades.vercel.app</text>
+    <text x="1166" y="122" font-size="11" fill="#F4F1EA" opacity="0.5" letter-spacing="2">HALF-KELLY SIZING &#183; PLATT / ISOTONIC CALIBRATION</text>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-label="Also in the workshop: WebDesk — any website or shader as a live Windows wallpaper. OMNI — a 1.05 trillion parameter sparse mixture-of-experts research build in Rust. pane — real Linux desktops on Windows.">
+  <style> text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; } </style>
+  <rect x="1" y="1" width="1198" height="88" fill="#F4F1EA" stroke="#0A0A0A" stroke-width="2"/>
+  <rect x="400" y="14" width="2" height="62" fill="#0A0A0A" opacity="0.25"/>
+  <rect x="800" y="14" width="2" height="62" fill="#0A0A0A" opacity="0.25"/>
+
+  <g fill="#0A0A0A">
+    <text x="28" y="38" font-size="17" font-weight="900" letter-spacing="3">&#8220;WEBDESK&#8221;</text>
+    <text x="28" y="60" font-size="10.5" font-weight="600" letter-spacing="1.5" opacity="0.7">ANY WEBSITE / SHADER AS A LIVE</text>
+    <text x="28" y="74" font-size="10.5" font-weight="600" letter-spacing="1.5" opacity="0.7">WINDOWS WALLPAPER &#183; C#</text>
+
+    <text x="428" y="38" font-size="17" font-weight="900" letter-spacing="3">&#8220;OMNI&#8221;</text>
+    <text x="428" y="60" font-size="10.5" font-weight="600" letter-spacing="1.5" opacity="0.7">1.05T-PARAM SPARSE MOE RESEARCH</text>
+    <text x="428" y="74" font-size="10.5" font-weight="600" letter-spacing="1.5" opacity="0.7">BUILD &#183; RUST &#183; HEAD IN CLOUDS, YES</text>
+
+    <text x="828" y="38" font-size="17" font-weight="900" letter-spacing="3">&#8220;PANE&#8221;</text>
+    <text x="828" y="60" font-size="10.5" font-weight="600" letter-spacing="1.5" opacity="0.7">REAL LINUX DESKTOPS ON WINDOWS</text>
+    <text x="828" y="74" font-size="10.5" font-weight="600" letter-spacing="1.5" opacity="0.7">WSL2 / XRDP &#183; RUST &#183; SHIPS AS pane.exe</text>
+  </g>
+  <g fill="#FF6B00" font-size="9" font-weight="700" letter-spacing="2">
+    <text x="372" y="30" text-anchor="end">01</text>
+    <text x="772" y="30" text-anchor="end">02</text>
+    <text x="1168" y="30" text-anchor="end">03</text>
+  </g>
+</svg>
