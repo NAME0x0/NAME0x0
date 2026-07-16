@@ -1,0 +1,38 @@
+name: Refresh README Assets
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    name: Refresh cards, stats, and stoic plates
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refresh gh-ascii profile cards (keep last good copy on failure)
+        run: |
+          curl -fL --max-time 60 "https://gh.crafter.run/NAME0x0?theme=dark" -o dark_mode.svg.tmp && mv dark_mode.svg.tmp dark_mode.svg || true
+          curl -fL --max-time 60 "https://gh.crafter.run/NAME0x0?theme=light" -o light_mode.svg.tmp && mv light_mode.svg.tmp light_mode.svg || true
+          rm -f dark_mode.svg.tmp light_mode.svg.tmp
+
+      - name: Render stats and stoic plates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/render_plates.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg assets/stats.svg assets/stoic.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh README assets"
+            git push
+          fi
