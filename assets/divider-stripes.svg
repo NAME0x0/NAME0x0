@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="24" viewBox="0 0 1200 24" role="img" aria-label="Industrial hazard stripe divider">
+  <defs>
+    <pattern id="hz" width="28" height="24" patternUnits="userSpaceOnUse" patternTransform="skewX(-30)">
+      <rect width="28" height="24" fill="#F4F1EA"/>
+      <rect width="14" height="24" fill="#0A0A0A"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="24" fill="#F4F1EA"/>
+  <rect x="0" y="3" width="1200" height="18" fill="url(#hz)"/>
+  <rect x="0" y="0" width="1200" height="2" fill="#0A0A0A"/>
+  <rect x="0" y="22" width="1200" height="2" fill="#FF6B00"/>
+</svg>
