@@ -192,20 +192,177 @@ def render_stoic(quotes):
 '''
 
 
+def fetch_shipping_log(limit=5):
+    """Last `limit` pushes across repos: (date, repo, message).
+
+    Skips the profile repo itself (bot refresh commits) and excluded repos.
+    payload.commits is unreliable on the public feed, so the newest commit
+    is fetched per repo instead; one entry per repo keeps the log varied.
+    """
+    entries, seen = [], set()
+    events = api_get(f"/users/{USER}/events/public?per_page=100")
+    for ev in events:
+        if ev.get("type") != "PushEvent":
+            continue
+        full = ev["repo"]["name"]
+        name = full.split("/")[-1]
+        if name in EXCLUDED_REPOS or name == USER or full in seen:
+            continue
+        seen.add(full)
+        latest = api_get(f"/repos/{full}/commits?per_page=1")
+        if not latest:
+            continue
+        msg = latest[0]["commit"]["message"].splitlines()[0]
+        day = latest[0]["commit"]["author"]["date"][:10]
+        entries.append((day, name, msg))
+        if len(entries) >= limit:
+            break
+    return entries
+
+
+def render_shipping(entries):
+    rows = []
+    y = 78
+    for day, repo, msg in entries:
+        rows.append(
+            f'<text x="34" y="{y}" font-size="16" font-weight="700" letter-spacing="1" fill="{OFFWHITE}" opacity="0.55">{escape(day)}</text>'
+            f'<text x="168" y="{y}" font-size="16" font-weight="900" letter-spacing="1" fill="{ORANGE}">{escape(truncate(repo.upper(), 18))}</text>'
+            f'<text x="420" y="{y}" font-size="16" font-weight="600" fill="{OFFWHITE}">&#8220;{escape(truncate(msg, 70))}&#8221;</text>'
+        )
+        y += 32
+    if not entries:
+        rows.append(f'<text x="34" y="78" font-size="16" fill="{OFFWHITE}" opacity="0.5">NOTHING ON THE DOCK. UNUSUAL.</text>')
+    height = max(y + 12, 120)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{height}" viewBox="0 0 1200 {height}" role="img" aria-label="Shipping log: the latest commits pushed across {escape(USER)}'s repositories, regenerated daily">
+  <style> text {{ font-family: {FONT}; }} </style>
+  <rect width="1200" height="{height}" fill="{BLACK}"/>
+  <rect x="0" y="0" width="6" height="{height}" fill="{ORANGE}"/>
+  <text x="34" y="36" font-size="14" font-weight="800" letter-spacing="4" fill="{ORANGE}">&#8220;SHIPPING LOG&#8221;</text>
+  <text x="1166" y="36" text-anchor="end" font-size="12" font-weight="600" letter-spacing="2" fill="{OFFWHITE}" opacity="0.45">LATEST PUSH PER REPO &#183; NEWEST FIRST</text>
+  {''.join(rows)}
+</svg>
+'''
+
+
+def fetch_streaks():
+    """Contribution streaks from the GraphQL contributions calendar.
+
+    Requires a token; raises on failure so the caller can keep the last
+    good SVG instead of overwriting it with an empty plate.
+    """
+    if not TOKEN:
+        raise RuntimeError("GITHUB_TOKEN required for streak data")
+    query = json.dumps({
+        "query": """query($login: String!) {
+          user(login: $login) {
+            contributionsCollection {
+              contributionCalendar {
+                totalContributions
+                weeks { contributionDays { date contributionCount } }
+              }
+            }
+          }
+        }""",
+        "variables": {"login": USER},
+    }).encode("utf-8")
+    req = urllib.request.Request(API + "/graphql", data=query, method="POST")
+    req.add_header("Authorization", "Bearer " + TOKEN)
+    req.add_header("Content-Type", "application/json")
+    req.add_header("User-Agent", USER)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        data = json.load(resp)
+    cal = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    days = [d for w in cal["weeks"] for d in w["contributionDays"]]
+    days.sort(key=lambda d: d["date"])
+
+    longest = cur = 0
+    for d in days:
+        cur = cur + 1 if d["contributionCount"] > 0 else 0
+        longest = max(longest, cur)
+
+    current = 0
+    for d in reversed(days):
+        if d["contributionCount"] > 0:
+            current += 1
+        elif d["date"] == date.today().isoformat():
+            continue  # today can still get commits; don't break the streak yet
+        else:
+            break
+    return {"total": cal["totalContributions"], "current": current, "longest": longest}
+
+
+def render_streak(s):
+    cells = []
+    x = 34
+    for label, value in [
+        ("CURRENT STREAK", f'{s["current"]} DAYS'),
+        ("LONGEST STREAK", f'{s["longest"]} DAYS'),
+        ("CONTRIBUTIONS / YEAR", fmt(s["total"])),
+    ]:
+        cells.append(
+            f'<text x="{x}" y="84" font-size="40" font-weight="900" fill="{BLACK}">{escape(value)}</text>'
+            f'<text x="{x}" y="112" font-size="12" font-weight="700" letter-spacing="3" fill="{BLACK}" opacity="0.55">{escape(label)}</text>'
+        )
+        x += 400
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="Contribution streaks for {escape(USER)}: current streak, longest streak, and total contributions this year">
+  <style> text {{ font-family: {FONT}; }} </style>
+  <rect x="1" y="1" width="1198" height="148" fill="{OFFWHITE}" stroke="{BLACK}" stroke-width="2"/>
+  <rect x="0" y="0" width="6" height="150" fill="{ORANGE}"/>
+  <text x="34" y="38" font-size="14" font-weight="800" letter-spacing="4" fill="{BLACK}" opacity="0.6">&#8220;CONSISTENCY REPORT&#8221;</text>
+  {''.join(cells)}
+</svg>
+'''
+
+
+def render_focus():
+    with open(os.path.join(ROOT, "scripts", "focus.json"), encoding="utf-8") as f:
+        focus = json.load(f)
+    text = truncate(focus["text"], 110)
+    size = 22 if len(text) <= 78 else (18 if len(text) <= 92 else 15)
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="Now building: {escape(text)}">
+  <style>
+    text {{ font-family: {FONT}; }}
+    .dot {{ animation: blink 1.4s ease-in-out infinite; }}
+    @keyframes blink {{ 0%,100% {{ opacity: 1; }} 50% {{ opacity: 0.2; }} }}
+  </style>
+  <rect width="1200" height="110" fill="{BLACK}"/>
+  <rect x="0" y="0" width="6" height="110" fill="{ORANGE}"/>
+  <circle class="dot" cx="46" cy="38" r="6" fill="{ORANGE}"/>
+  <text x="66" y="44" font-size="14" font-weight="800" letter-spacing="4" fill="{ORANGE}">&#8220;NOW BUILDING&#8221;</text>
+  <text x="34" y="84" font-size="{size}" font-weight="800" fill="{OFFWHITE}">{escape(text.upper())}</text>
+</svg>
+'''
+
+
+def write_svg(name, content):
+    assets = os.path.join(ROOT, "assets")
+    os.makedirs(assets, exist_ok=True)
+    with open(os.path.join(assets, name), "w", encoding="utf-8", newline="\n") as f:
+        f.write(content)
+
+
 def main():
     with open(os.path.join(ROOT, "scripts", "quotes.json"), encoding="utf-8") as f:
         quotes = json.load(f)
 
-    stats_svg = render_stats(fetch_stats())
-    stoic_svg = render_stoic(quotes)
+    write_svg("stats.svg", render_stats(fetch_stats()))
+    write_svg("stoic.svg", render_stoic(quotes))
+    write_svg("focus.svg", render_focus())
+    wrote = ["stats.svg", "stoic.svg", "focus.svg"]
 
-    assets = os.path.join(ROOT, "assets")
-    os.makedirs(assets, exist_ok=True)
-    with open(os.path.join(assets, "stats.svg"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(stats_svg)
-    with open(os.path.join(assets, "stoic.svg"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(stoic_svg)
-    print("wrote assets/stats.svg and assets/stoic.svg")
+    # Keep-last-good: these two depend on flakier data sources.
+    try:
+        write_svg("shipping.svg", render_shipping(fetch_shipping_log()))
+        wrote.append("shipping.svg")
+    except Exception as exc:  # noqa: BLE001 — keep previous SVG on any failure
+        print(f"shipping.svg skipped: {exc}", file=sys.stderr)
+    try:
+        write_svg("streak.svg", render_streak(fetch_streaks()))
+        wrote.append("streak.svg")
+    except Exception as exc:  # noqa: BLE001
+        print(f"streak.svg skipped: {exc}", file=sys.stderr)
+
+    print("wrote " + ", ".join(wrote))
 
 
 if __name__ == "__main__":

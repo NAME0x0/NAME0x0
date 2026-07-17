@@ -22,6 +22,10 @@
   <img src="assets/divider-stripes.svg" alt="" width="100%" />
 </p>
 
+<p align="center">
+  <img src="assets/focus.svg" alt="Now building: making 2B models punch above their weight, keeping 11 agents arguing productively about markets" width="100%" />
+</p>
+
 ## The Work
 
 <p align="center">
@@ -47,6 +51,12 @@
 
 <p align="center">
   <img src="assets/stats.svg" alt="Live GitHub statistics for NAME0x0: repositories, stars, followers, commits this year, top languages, and latest shipped commit — regenerated daily from the GitHub API" width="100%" />
+</p>
+<p align="center">
+  <img src="assets/shipping.svg" alt="Shipping log: latest commits pushed across NAME0x0's repositories, newest first, regenerated daily" width="100%" />
+</p>
+<p align="center">
+  <img src="assets/streak.svg" alt="Consistency report: current contribution streak, longest streak, and total contributions this year" width="100%" />
 </p>
 
 ## Capabilities

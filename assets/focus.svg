@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="Now building: Making 2B models punch above their weight · keeping 11 agents arguing productively about markets">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .dot { animation: blink 1.4s ease-in-out infinite; }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.2; } }
+  </style>
+  <rect width="1200" height="110" fill="#0A0A0A"/>
+  <rect x="0" y="0" width="6" height="110" fill="#FF6B00"/>
+  <circle class="dot" cx="46" cy="38" r="6" fill="#FF6B00"/>
+  <text x="66" y="44" font-size="14" font-weight="800" letter-spacing="4" fill="#FF6B00">&#8220;NOW BUILDING&#8221;</text>
+  <text x="34" y="84" font-size="15" font-weight="800" fill="#F4F1EA">MAKING 2B MODELS PUNCH ABOVE THEIR WEIGHT · KEEPING 11 AGENTS ARGUING PRODUCTIVELY ABOUT MARKETS</text>
+</svg>
