@@ -26,9 +26,9 @@ ORANGE = "#FF6B00"
 GREY = "#8a857a"
 MONO = "Consolas, 'Courier New', monospace"
 
-ART_COLS = 96
-CHAR_W = 6.0
-CHAR_H = 11.0
+ART_COLS = 88
+CHAR_W = 6.3
+CHAR_H = 11.5
 # Light-on-dark: brighter pixel -> denser glyph.
 RAMP = " .`':,;-~=+*coxwXWM@"
 
@@ -72,7 +72,7 @@ def uptime_text(created_at):
     return f"{years} years, {months} months, {days} days"
 
 
-def leader(label, value, width=58):
+def leader(label, value, width=46):
     dots = "." * max(width - len(label) - len(value), 2)
     return label, dots, value
 
@@ -91,10 +91,10 @@ def render(user, stats, art):
         ("kv", leader("GitHub", f"github.com/{USER}")),
         ("gap", None),
         ("head", "GitHub Stats"),
-        ("kv", leader("Repos", f'{stats["repos"]}', 28)),
-        ("kv", leader("Stars", f'{stats["stars"]}', 28)),
-        ("kv", leader(f"Commits {year}", f'{stats["commits"] or "—"}', 28)),
-        ("kv", leader("Followers", f'{stats["followers"]}', 28)),
+        ("kv", leader("Repos", f'{stats["repos"]}', 30)),
+        ("kv", leader("Stars", f'{stats["stars"]}', 30)),
+        ("kv", leader(f"Commits {year}", f'{stats["commits"] or "—"}', 30)),
+        ("kv", leader("Followers", f'{stats["followers"]}', 30)),
     ]
 
     art_x, art_y = 30, 46
@@ -105,8 +105,8 @@ def render(user, stats, art):
         f'<style> text {{ font-family: {MONO}; white-space: pre; }} </style>',
         f'<rect width="1200" height="{height}" fill="{BLACK}"/>',
         f'<rect x="0" y="0" width="6" height="{height}" fill="{ORANGE}"/>',
-        f'<text x="{art_x}" y="28" font-size="11" font-weight="700" letter-spacing="4" fill="{ORANGE}" font-family="Helvetica, Arial, sans-serif">&#8220;SELF-PORTRAIT, SELF-HOSTED&#8221;</text>',
-        f'<text x="1170" y="28" text-anchor="end" font-size="10" letter-spacing="2" fill="{OFFWHITE}" opacity="0.4" font-family="Helvetica, Arial, sans-serif">NO CARD SERVICE. DREW IT MYSELF.</text>',
+        f'<text x="{art_x}" y="30" font-size="14" font-weight="700" letter-spacing="4" fill="{ORANGE}" font-family="Helvetica, Arial, sans-serif">&#8220;SELF-PORTRAIT, SELF-HOSTED&#8221;</text>',
+        f'<text x="1170" y="30" text-anchor="end" font-size="12" letter-spacing="2" fill="{OFFWHITE}" opacity="0.45" font-family="Helvetica, Arial, sans-serif">NO CARD SERVICE. DREW IT MYSELF.</text>',
     ]
 
     for i, line in enumerate(art):
@@ -117,29 +117,29 @@ def render(user, stats, art):
             f'<text x="{art_x}" y="{y:.0f}" font-size="10.5" xml:space="preserve" fill="{OFFWHITE}">{escape(line)}</text>'
         )
 
-    ix, iy = 660, 120
+    ix, iy = 620, 96
     for kind, payload in info:
         if kind == "gap":
-            iy += 14
+            iy += 18
             continue
         if kind == "head":
             parts.append(
-                f'<text x="{ix}" y="{iy}" font-size="14" font-weight="700" fill="{ORANGE}">{escape(payload)}</text>'
+                f'<text x="{ix}" y="{iy}" font-size="19" font-weight="700" fill="{ORANGE}">{escape(payload)}</text>'
             )
             parts.append(
-                f'<rect x="{ix}" y="{iy + 6}" width="480" height="1" fill="{OFFWHITE}" opacity="0.2"/>'
+                f'<rect x="{ix}" y="{iy + 8}" width="550" height="1" fill="{OFFWHITE}" opacity="0.2"/>'
             )
-            iy += 26
+            iy += 34
             continue
         label, dots, value = payload
         parts.append(
-            f'<text x="{ix}" y="{iy}" font-size="12.5" xml:space="preserve">'
+            f'<text x="{ix}" y="{iy}" font-size="17" xml:space="preserve">'
             f'<tspan fill="{ORANGE}">. </tspan>'
             f'<tspan fill="{OFFWHITE}">{escape(label)}: </tspan>'
             f'<tspan fill="{GREY}">{escape(dots)} </tspan>'
             f'<tspan fill="{OFFWHITE}" font-weight="700">{escape(value)}</tspan></text>'
         )
-        iy += 20
+        iy += 27
 
     parts.append("</svg>")
     return "\n".join(parts) + "\n"
