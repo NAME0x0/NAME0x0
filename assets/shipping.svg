@@ -4,5 +4,5 @@
   <rect x="0" y="0" width="6" height="122" fill="#FF6B00"/>
   <text x="34" y="36" font-size="14" font-weight="800" letter-spacing="4" fill="#FF6B00">&#8220;SHIPPING LOG&#8221;</text>
   <text x="1166" y="36" text-anchor="end" font-size="12" font-weight="600" letter-spacing="2" fill="#F4F1EA" opacity="0.45">LATEST PUSH PER REPO &#183; NEWEST FIRST</text>
-  <text x="34" y="78" font-size="16" font-weight="700" letter-spacing="1" fill="#F4F1EA" opacity="0.55">2026-08-19</text><text x="168" y="78" font-size="16" font-weight="900" letter-spacing="1" fill="#FF6B00">HYMARKX</text><text x="420" y="78" font-size="16" font-weight="600" fill="#F4F1EA">&#8220;test(e2e): prove --fragment reproduces pre-0.0.4 output byte for byte&#8221;</text>
+  <text x="34" y="78" font-size="16" font-weight="700" letter-spacing="1" fill="#F4F1EA" opacity="0.55">2026-08-20</text><text x="168" y="78" font-size="16" font-weight="900" letter-spacing="1" fill="#FF6B00">HYMARKX</text><text x="420" y="78" font-size="16" font-weight="600" fill="#F4F1EA">&#8220;feat(parser): escape quotes inside attribute values, per ADR-0018&#8221;</text>
 </svg>
